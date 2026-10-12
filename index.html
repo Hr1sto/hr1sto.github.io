@@ -3,128 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Промени заглавието на сайта тук -->
-    <title>Юнайтед Благоевград | Футболен клуб</title>
-    <meta
-      name="description"
-      content="Юнайтед Благоевград — футбол, характер и отборен дух."
-    />
-
-    <link rel="icon" href="images/logo.jpg" />
+    <title>Начало | Юнайтед Благоевград</title>
+    <meta name="description" content="Официален сайт на футболен клуб Юнайтед Благоевград." />
+    <meta property="og:title" content="Начало | Юнайтед Благоевград" />
+    <meta property="og:description" content="Официален сайт на футболен клуб Юнайтед Благоевград." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hr1sto.github.io/" />
+    <meta property="og:image" content="https://hr1sto.github.io/images/logo-new.png" />
+    <link rel="icon" href="images/logo-new.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-
   <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Към началото">
-        <img src="images/logo.jpg" alt="Лого на Юнайтед Благоевград" />
-        <span>
-          <strong>United</strong>
-          <small>Blagoevgrad FC</small>
-        </span>
-      </a>
+    <a class="skip-link" href="#main-content">Към основното съдържание</a>
 
-      <nav aria-label="Основна навигация">
-        <a href="#otbor">Отборът</a>
-        <a href="#cennosti">Ценности</a>
-        <a href="gallery.html">Галерия</a>
-      </nav>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-brand" href="index.html" aria-label="Юнайтед Благоевград — начало">
+          <img src="images/logo-new.png" alt="Лого на Юнайтед Благоевград" />
+          <span><strong>United Blagoevgrad</strong><small>Football Club</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Отвори менюто" data-menu-toggle>
+          <span class="menu-toggle-box" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Основна навигация" data-site-nav>
+          <a href="index.html" aria-current="page">Начало</a>
+          <a href="about.html">Клуб</a>
+          <a href="team.html">Отбор</a>
+          <a href="matches.html">Мачове</a>
+          <a href="news.html">Новини</a>
+          <a href="gallery.html">Галерия</a>
+          <a href="contact.html">Контакти</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="hero" id="nachalo">
-        <div class="hero-copy">
-          <p class="eyebrow">Футболен клуб · Благоевград</p>
-
-          <!-- Промени големия текст на началната страница тук -->
-          <h1>Заедно сме <span>по-силни.</span></h1>
-          <p class="intro">
-            Отбор, изграден с характер. Обединени от играта, водени от амбицията.
-          </p>
-          <a class="button" href="#otbor">Виж отбора <span>↓</span></a>
-        </div>
-
-        <div class="hero-photo">
-          <img src="images/team2.jpg" alt="Отборът на Юнайтед Благоевград" />
-          <div class="photo-label">Синьо · Червено · Заедно</div>
+    <main id="main-content">
+      <section class="home-hero" aria-labelledby="home-title">
+        <img src="images/team2.jpg" alt="Отборът на Юнайтед Благоевград" />
+        <div class="container home-hero-content">
+          <h1 class="club-name" id="home-title">United <span>Blagoevgrad</span></h1>
+          <p class="club-location">Благоевград</p>
         </div>
       </section>
 
-      <section class="about section" id="otbor">
-        <p class="section-number">01 / Кои сме ние</p>
-        <div class="section-title">
-          <h2>Един отбор.<br /><span>Една посока.</span></h2>
-          <div>
-            <!-- Промени описанието на отбора тук -->
-            <p class="large-text">
-              Юнайтед Благоевград е повече от футболен клуб — това е място, където
-              усилието се превръща в увереност, а съотборниците — в общност.
-            </p>
-            <p>
-              Тренираме с дисциплина, подкрепяме се във всеки момент и носим цветовете
-              си с гордост.
-            </p>
+      <section class="section" aria-label="Мачове и резултати">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">Програма</p><h2>Предстоящи срещи</h2></div>
+            <a class="button button--outline" href="https://bgclubs.eu/teams/Yunayted(Blagoevgrad)" target="_blank" rel="noopener noreferrer">Програма в BGClubs ↗</a>
+          </div>
+          <div class="match-overview">
+          <article class="match-panel">
+            <header class="match-panel-header">
+              <h2>Предстоящ мач</h2>
+              <span class="match-label">Следващ</span>
+            </header>
+            <div class="match-teams">
+              <div class="match-team">
+                <img src="images/logo-new.png" alt="Лого на Юнайтед Благоевград" />
+                <strong>Юнайтед</strong>
+              </div>
+              <span class="match-versus">срещу</span>
+              <div class="match-team">
+                <span class="crest-placeholder" aria-hidden="true">ЛЕВ</span>
+                <strong>Левски 2008 (Крупник)</strong>
+              </div>
+            </div>
+            <footer class="match-meta"><span>18 октомври 2026</span><span>16:00 ч.</span><span>Домакински мач</span></footer>
+          </article>
+
+          <article class="match-panel match-panel--result">
+            <header class="match-panel-header">
+              <h2>Последен резултат</h2>
+              <span class="match-label">Изминал</span>
+            </header>
+            <div class="match-teams">
+              <div class="match-team">
+                <img src="images/logo-new.png" alt="Лого на Юнайтед Благоевград" />
+                <strong>Юнайтед</strong>
+              </div>
+              <span class="match-score">1 : 6</span>
+              <div class="match-team">
+                <span class="crest-placeholder" aria-hidden="true">РИЛ</span>
+                <strong>Рилци 2006 (Рилци)</strong>
+              </div>
+            </div>
+            <footer class="match-meta"><span>11 октомври 2026</span><span>6 кръг • гостуване</span></footer>
+          </article>
           </div>
         </div>
       </section>
 
-      <section class="values section" id="cennosti">
-        <p class="section-number light">02 / Нашите ценности</p>
-        <h2>Това, което <span>ни води.</span></h2>
-
-        <div class="value-grid">
-          <!-- Можеш да променяш заглавията и текстовете на трите картички -->
-          <article>
-            <span class="card-number">01</span>
-            <h3>Единство</h3>
-            <p>Движим се като един — на терена, в тренировките и извън тях.</p>
-          </article>
-          <article>
-            <span class="card-number">02</span>
-            <h3>Характер</h3>
-            <p>Работим здраво, играем смело и не се отказваме до последния сигнал.</p>
-          </article>
-          <article>
-            <span class="card-number">03</span>
-            <h3>Развитие</h3>
-            <p>Всяка тренировка е крачка напред. Всеки мач — нов урок.</p>
-          </article>
+      <section class="section section--white" aria-labelledby="latest-news-title">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">Новини</p><h2 id="latest-news-title">Последни новини</h2></div>
+            <a class="button button--outline" href="news.html">Всички новини</a>
+          </div>
+          <div class="news-grid news-grid--featured">
+            <article class="news-card">
+              <div class="news-card-image"><img src="images/team-red.png" alt="Отборът на Юнайтед Благоевград" loading="lazy" /></div>
+              <div class="news-card-body">
+                <time datetime="2025-07-31">31 юли 2025</time>
+                <h3>„Юнайтед Благоевград“ заяви участие в „А“ областна група „Струма“</h3>
+                <a class="text-link" href="https://www.balkannews.bg/novouchredeniqt-yunayted-blagoevgrad-zaqvi-uchastie-v-pirinskata-bundesliga" target="_blank" rel="noopener noreferrer">Прочети в BalkanNews ↗</a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="gallery-teaser" id="galeria">
-        <div class="gallery-teaser-photo">
-          <img src="images/team1.jpg" alt="Тренировка на Юнайтед Благоевград" />
-        </div>
-        <div class="gallery-teaser-copy">
-          <p class="section-number light">03 / Галерия</p>
-          <h2>Виж отбора <span>в действие.</span></h2>
-          <p class="large-text">
-            Моменти от тренировките и хората, които превръщат клуба в отбор.
-          </p>
-          <a class="button light-button" href="gallery.html">Отвори галерията <span>→</span></a>
-        </div>
-      </section>
-
-      <section class="closing section">
-        <img src="images/logo.jpg" alt="Емблема на Юнайтед Благоевград" />
-        <div>
-          <p class="section-number">United Blagoevgrad</p>
-          <h2>Играем с <span>гордост.</span></h2>
-          <p class="large-text">
-            Всеки ден е нов шанс да станем по-добри — за себе си, за отбора и за
-            Благоевград.
-          </p>
-          <a class="button dark-button" href="#nachalo">Към началото <span>↑</span></a>
-        </div>
+      <section class="team-promo" aria-labelledby="team-promo-title">
+        <div class="team-promo-image"><img src="images/team-orange.png" alt="Отборът на Юнайтед Благоевград" loading="lazy" /></div>
+        <div class="team-promo-copy"><p class="eyebrow">United Blagoevgrad</p><h2 id="team-promo-title">Отборът</h2><a class="button button--secondary" href="team.html">Виж снимките</a></div>
       </section>
     </main>
 
-    <footer>
-      <strong>United Blagoevgrad</strong>
-      <span>Football Club · Blagoevgrad</span>
-      <span>Синьо. Червено. Заедно.</span>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="footer-brand" href="index.html"><img src="images/logo-new.png" alt="" /><span>ФК Юнайтед Благоевград</span></a>
+        <nav class="footer-nav" aria-label="Навигация във футъра">
+          <a href="index.html">Начало</a><a href="about.html">Клуб</a><a href="team.html">Отбор</a><a href="matches.html">Мачове</a><a href="news.html">Новини</a><a href="gallery.html">Галерия</a><a href="contact.html">Контакти</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">© 2026 United Blagoevgrad FC</div>
     </footer>
   </body>
 </html>
+
