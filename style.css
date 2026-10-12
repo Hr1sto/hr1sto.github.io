@@ -40,6 +40,7 @@ body.lightbox-open {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -1087,6 +1088,20 @@ a {
   color: var(--color-muted);
 }
 
+.contact-row dd a {
+  color: var(--color-primary);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-decoration-color: rgb(11 42 102 / 30%);
+  text-underline-offset: 4px;
+}
+
+.contact-row dd a:hover {
+  color: var(--color-secondary);
+  text-decoration-color: currentColor;
+}
+
 /* Shared footer */
 .site-footer {
   color: rgb(255 255 255 / 70%);
@@ -1274,6 +1289,7 @@ a {
 
   .site-brand {
     min-width: 0;
+    max-width: calc(100% - 58px);
   }
 
   .site-brand img {
@@ -1283,6 +1299,7 @@ a {
 
   .site-brand strong {
     font-size: 0.84rem;
+    letter-spacing: 0.055em;
   }
 
   .site-brand small {
@@ -1294,7 +1311,7 @@ a {
   }
 
   .home-hero > img {
-    object-position: 58% center;
+    object-position: 52% center;
   }
 
   .home-hero-content {
@@ -1302,7 +1319,11 @@ a {
   }
 
   .club-name {
-    font-size: clamp(3rem, 16vw, 5rem);
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(2.35rem, 12.5vw, 4.5rem);
+    letter-spacing: -0.055em;
+    line-height: 0.92;
   }
 
   .club-name span {
@@ -1333,6 +1354,10 @@ a {
     min-height: 300px;
   }
 
+  .team-promo-image img {
+    object-position: center 42%;
+  }
+
   .team-promo-copy {
     padding: 40px 24px;
   }
@@ -1343,6 +1368,12 @@ a {
 
   .portrait-placeholder {
     min-height: 440px;
+  }
+
+  .president-photo {
+    min-height: 0;
+    aspect-ratio: 3 / 4;
+    object-position: center top;
   }
 
   .fixture-row {
@@ -1413,6 +1444,113 @@ a {
   .footer-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .container {
+    width: min(calc(100% - 24px), var(--container));
+  }
+
+  .header-inner {
+    gap: 10px;
+  }
+
+  .site-brand {
+    gap: 8px;
+  }
+
+  .site-brand img {
+    width: 42px;
+    height: 42px;
+    border-radius: 9px;
+  }
+
+  .site-brand strong {
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+  }
+
+  .site-brand small {
+    margin-top: 3px;
+    font-size: 0.54rem;
+    letter-spacing: 0.08em;
+  }
+
+  .menu-toggle {
+    width: 42px;
+    height: 40px;
+    flex: 0 0 42px;
+  }
+
+  .home-hero {
+    min-height: 460px;
+  }
+
+  .home-hero-content {
+    padding-block: 52px;
+  }
+
+  .club-name {
+    font-size: clamp(2.1rem, 11.5vw, 3rem);
+  }
+
+  .club-location {
+    margin-top: 20px;
+    font-size: 0.78rem;
+  }
+
+  .button {
+    width: 100%;
+    padding-inline: 14px;
+    text-align: center;
+  }
+
+  .match-teams,
+  .fixture-teams {
+    grid-template-columns: 1fr;
+  }
+
+  .match-teams {
+    min-height: 0;
+    padding: 24px 18px;
+  }
+
+  .match-team strong {
+    max-width: 230px;
+  }
+
+  .fixture-club--away {
+    flex-direction: column-reverse;
+  }
+
+  .fixture-row--past .fixture-center {
+    justify-self: center;
+  }
+
+  .news-card-image {
+    height: 190px;
+  }
+
+  .team-promo-image {
+    min-height: 250px;
+  }
+
+  .gallery-grid {
+    columns: 1;
+  }
+
+  .contact-card,
+  .editable-copy {
+    padding: 24px;
+  }
+
+  .footer-nav {
+    grid-template-columns: 1fr;
   }
 }
 
